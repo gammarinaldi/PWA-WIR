@@ -1,5 +1,5 @@
 const apiKey = '07728c4b4c4f40ee8f6b48bfcdc437ee';
-const defaultSource = 'the-washington-post';
+const defaultSource = 'buzzfeed';
 const sourceSelector = document.querySelector('#sources');
 const sourceSelector0 = document.querySelector('#link0');
 const sourceSelector1 = document.querySelector('#link1');
@@ -16,10 +16,10 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('load', e => {
   //sourceSelector.addEventListener('change', evt => updateNews(defaultSource));
-  sourceSelector0.addEventListener('click', evt => updateNews('the-washington-post'));
-  sourceSelector1.addEventListener('click', evt => updateNews('abc-news'));
-  sourceSelector2.addEventListener('click', evt => updateNews('fox-news'));
-  sourceSelector3.addEventListener('click', evt => updateNews('espn'));
+  sourceSelector0.addEventListener('click', evt => updateNews('buzzfeed'));
+  sourceSelector1.addEventListener('click', evt => updateNews('ign'));
+  sourceSelector2.addEventListener('click', evt => updateNews('mashable'));
+  sourceSelector3.addEventListener('click', evt => updateNews('techcrunch'));
 
   // updateNewsSources().then(() => {
   //   sourceSelector.value = defaultSource;
