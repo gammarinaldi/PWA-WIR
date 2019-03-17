@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
     .then(registration => {
       console.log('Service Worker: Registration Success.');
-      
+
       updateNews('wired');
       updateNews('ign');
       updateNews('mashable');
@@ -25,6 +25,7 @@ if ('serviceWorker' in navigator) {
         }
       }
       window.onload();
+      updateNews('wired');
     })
     .catch(err => 'Service Worker: Registration Failed'));
 }
