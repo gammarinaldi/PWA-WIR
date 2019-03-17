@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
       updateNews('techcrunch');
 
       window.onload = () => {
-        if(!window.location.hash) {
+        if(window.location.hash !== '#loaded') {
             window.location = window.location + '#loaded';
             window.location.reload();
         }
