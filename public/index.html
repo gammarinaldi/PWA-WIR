@@ -3,22 +3,68 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>WIR News Channel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WIR News</title>
 
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#ffffff" />
+    <!-- Main css styling -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Magic that make your app PWA -->
+    <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
+  <!-- Header company logo -->
   <center>
-  <h1><a href="#" id="link0">WIR News Channel</a></h1>
-  <h3><a href="#" id="link1">IGN</a> | <a href="#" id="link2">Mashable</a> | <a href="#" id="link3">Techcrunch</a></h3>
-  <!-- <select id="sources"></select> -->
+      <img src="./images/WIR-logo.png" alt="WIR Logo"><br/><br/>
   </center>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">HIGHLIGHT NEWS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Horizontal menu header -->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+              <a class="nav-link" href="#" id="link0">Home
+                  <span class="sr-only">(current)</span>
+              </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#" id="link1">IGN</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#" id="link2">Mashable</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#" id="link3">Techcrunch</a>
+          </ul>
+          </div>
+      </div>
+
+  </nav> 
+
+  <br/><br/>
+
+  <!-- Content generated here -->
   <main></main>
+
+  <!-- Main processing of the app is here -->
   <script src="./app.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
