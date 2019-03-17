@@ -12,7 +12,8 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
     .then(registration => {
       console.log('Service Worker: Registration Success.');
-      updateNews(defaultSource);
+      
+      updateNews('wired');
       updateNews('ign');
       updateNews('mashable');
       updateNews('techcrunch');
@@ -30,7 +31,7 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('load', e => {
   //sourceSelector.addEventListener('change', evt => updateNews(defaultSource));
-  sourceSelector0.addEventListener('click', evt => updateNews(defaultSource));
+  sourceSelector0.addEventListener('click', evt => updateNews('wired'));
   sourceSelector1.addEventListener('click', evt => updateNews('ign'));
   sourceSelector2.addEventListener('click', evt => updateNews('mashable'));
   sourceSelector3.addEventListener('click', evt => updateNews('techcrunch'));
